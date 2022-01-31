@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Fesches-Le-Châtel</title>
+    <link rel="shortcut icon" href="images/blason.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+    .cRetour {
+      border-radius:40px;
+      padding:15px;
+      font-size:20px;
+      text-align:center;
+      color:#fff;
+      background:#3227da;
+      z-index:99999;
+      transition:all ease-in 0.2s;
+      position: fixed;
+      cursor: pointer;
+      bottom: 1em;
+      right: 20px;
+      display: none;
+    }
+    .cRetour:before{ content: "\25b2"; }
+    </style>
+ <script type="text/javascript"> 
+  function refresh(){
+      var t = 1000; // rafraîchissement en millisecondes
+      setTimeout('showDate()',t)
+  }
+  
+  function showDate() {
+      var date = new Date()
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var s = date.getSeconds();
+      if( h < 10 ){ h = '0' + h; }
+      if( m < 10 ){ m = '0' + m; }
+      if( s < 10 ){ s = '0' + s; }
+      var time = h + ':' + m + ':' + s
+      document.getElementById('horloge').innerHTML = time;
+      refresh();
+   }
+  </script>
+
+</head>
+<body onload=showDate(); >
+  <header class="header" role="banner">
+    
+    
+      <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+    </header>
+    
+      
+  
+  
+  
+    <nav role="navigation" class="navigation" tabindex="0">
+   
+          
+          
+       <a class="navigation__link" href="index.html">  Fesches-Le-Châtel </a>
+       <a class="navigation__link" href="actualites.html">  Actualités </a>
+       <a class="navigation__link" href="histoire.html">  Histoire de la commune </a>
+       <a class="navigation__link" href="horaire.html">   Horaires et contacts </a>
+       <a class="navigation__link" href="elus.html">   Les élus /Le personnel communal </a>
+       <a class="navigation__link" href="services.html">  Services à la population </a>
+       <a class="navigation__link" href="associations.html">  Les associations </a>
+       <a class="navigation__link" href="environnement.html">  Environnement </a>
+       <a class="navigation__link" href="urbanisme.html"> Urbanisme </a>
+  
+         
+      </nav>
+      <main class="main" role="main">
+      <script>
+          (function() {
+              function toggleNav() {
+              // Define targets
+              var target = document.querySelector('.main');
+              var button = document.querySelector('.burger-button');
+              var navigation = document.querySelector('.navigation');
+              
+              // click-touch event
+              if ( button ) {
+                button.addEventListener('click', 
+                function (e) { 
+                  navigation.classList.toggle('is-opened'); 
+                  navigation.focus();
+                  e.preventDefault();
+                }, false );
+              }
+              } // end toggleNav()
+              
+              toggleNav();
+              }());
+          </script>
+      <span id='horloge' ></span>
+    <script>            
+        jQuery(document).ready(function() {
+          var duration = 500;
+          jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > 100) {
+              
+              jQuery('.cRetour').fadeIn(duration);
+            } else {
+              
+              jQuery('.cRetour').fadeOut(duration);
+            }
+          });
+                        
+          jQuery('.cRetour').click(function(event) {
+            // Un clic provoque le retour en haut animé.
+            event.preventDefault();
+            jQuery('html, body').animate({scrollTop: 0}, duration);
+            return false;
+          })
+        });
+        </script>
+
+<div class="cRetour"></div>
+
+    <div class="haut">
+    <img class="blason" src="images/blason.png" alt="">
+    <h1>Informations utiles</h1>
+</div>
+
+<a class="compte-rendu" href="compte-rendu.html" target="_blank" ><h2>>> Compte-rendus des conseils municipaux </h2></a>
+
+<div class="page2">
+
+<img class="sapin" src="images/sapin.jpg" alt="">
+<h2>Ramassage de noël </h2>
+<p>Lundi 10 et 17 janvier 2022</p>
+<br>
+<img class="bois" src="images/bois.jpg" alt="">
+
+
+
+<h2>Bois stères faconés</h2>
+<p>Inscription en mairie jusqu'au 26 mars 2022</p>
+
+<br>
+<img class="clefs" src="images/clefs.jpg" alt="">
+<h2 class="location">Location salle des fêtes 33 rue Octave Japy</h2>
+<p>Pour le 1er semestre 2022</p>
+<br>
+<a class="lien-trier" href="images/trier.jpg " target="blank"  > <img class="trier" src="images/trier.jpg" alt="">
+<h2>Déchets interdits</h2>
+<p class="text-dechet">
+  Les piles, les batteries ou les ampoules, <br>
+    les capsules en aluminium pour le café, les dechets <br>
+    d'équipements électriques, les huiles alimentaires, <br>
+     les huiles moteur et autre huiles de vidange, les pneus... </p> </a>
+<br>
+
+<img class="camion" src="images/colle.jpg" alt="">
+<h2>Calendrier des collectes 2022</h2>
+<a class="calendrier" href="images/calendrier.png" target="_blank"  > -- Calendrier des collectes des dechets -- </a>
+<br>
+ <br>
+<img class="pma" src="images/pma.jpg" alt="">
+<h2>Plateforme territoriale de rénovation énergétique de PMA</h2>
+<p class="text-pma">Service Effilogis maison individuelle avec PMA avec sa Plateforme Territoriale Énergétique (PTRE),<br>
+     Pays de Montbéliard Agglomération déploie localment un service dédié à la rénovation performante de <br>
+    votre habitat. </p>
+
+</div>
+
+
+</body>
+<div class="footer">
+<footer>
+
+<p>
+   Mairie de Fesches-Le-Châtel 
+   <br>
+   <br>
+   1 Rue François Mitterand 25490 Fesches-Le-Châtel
+   <br>
+    -Tel: <a  href="tel:+33381930010"> 03 81 93 00 10 </a> 
+   <br>
+   
+   Contact Mairie : <a href="mailto:mairie.fesches-25@wanadoo.fr"> mairie.fesches-25@wanadoo.fr </a>
+
+</p>
+<p style="text-align: center"> ©  -<script>document.write(new Date().getFullYear())</script> LERICHE Amélie </p>
+
+
+</footer>
+</div>
+</html>

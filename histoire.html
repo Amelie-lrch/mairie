@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Fesches-Le-Châtel</title>
+    <link rel="shortcut icon" href="images/blason.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <style>
+    .cRetour {
+      border-radius:40px;
+      padding:15px;
+      font-size:20px;
+      text-align:center;
+      color:#fff;
+      background:#3227da;
+      z-index:99999;
+      transition:all ease-in 0.2s;
+      position: fixed;
+      cursor: pointer;
+      bottom: 1em;
+      right: 20px;
+      display: none;
+    }
+    .cRetour:before{ content: "\25b2"; }
+    .cRetour:before{ content: "\25b2"; }
+    </style>
+    
+    
+       <script type="text/javascript"> 
+        function refresh(){
+            var t = 1000; // rafraîchissement en millisecondes
+            setTimeout('showDate()',t)
+        }
+        
+        function showDate() {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if( h < 10 ){ h = '0' + h; }
+            if( m < 10 ){ m = '0' + m; }
+            if( s < 10 ){ s = '0' + s; }
+            var time = h + ':' + m + ':' + s
+            document.getElementById('horloge').innerHTML = time;
+            refresh();
+         }
+        </script>
+   
+      
+    
+</head>
+<body onload=showDate(); >
+<header class="header" role="banner">
+  
+  
+    <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+  </header>
+  
+    
+
+
+
+  <nav role="navigation" class="navigation" tabindex="0">
+ 
+        
+        
+     <a class="navigation__link" href="index.html">  Fesches-Le-Châtel </a>
+     <a class="navigation__link" href="actualites.html">  Actualités </a>
+     <a class="navigation__link" href="histoire.html">  Histoire de la commune </a>
+     <a class="navigation__link" href="horaire.html">   Horaires et contacts </a>
+     <a class="navigation__link" href="elus.html">   Les élus /Le personnel communal </a>
+     <a class="navigation__link" href="services.html">  Services à la population </a>
+     <a class="navigation__link" href="associations.html">  Les associations </a>
+     <a class="navigation__link" href="environnement.html">  Environnement </a>
+     <a class="navigation__link" href="urbanisme.html"> Urbanisme </a>
+
+       
+    </nav>
+    <main class="main" role="main">
+    <script>
+        (function() {
+            function toggleNav() {
+            // Define targets
+            var target = document.querySelector('.main');
+            var button = document.querySelector('.burger-button');
+            var navigation = document.querySelector('.navigation');
+            
+            // click-touch event
+            if ( button ) {
+              button.addEventListener('click', 
+              function (e) { 
+                navigation.classList.toggle('is-opened'); 
+                navigation.focus();
+                e.preventDefault();
+              }, false );
+            }
+            } // end toggleNav()
+            
+            toggleNav();
+            }());
+        </script>
+
+
+    
+
+<span id='horloge' ></span>
+<script>            
+    jQuery(document).ready(function() {
+      var duration = 500;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 100) {
+          
+  
+          jQuery('.cRetour').fadeIn(duration);
+        } else {
+          
+          jQuery('.cRetour').fadeOut(duration);
+        }
+      });
+                    
+      jQuery('.cRetour').click(function(event) {
+        // Un clic provoque le retour en haut animé.
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
+    </script>
+
+<div class="cRetour"></div>
+
+
+    <div class="haut">  
+    <img class="blason" src="images/blason.png" alt="">
+    <h1>Histoire de la commune</h1>
+    
+    </div>
+
+</div>
+
+   
+      <div class="-text">
+
+        <H2 class="titre2">Imformation sur le village : </H2>
+
+        <p class="text2">Fesches-le-Châtel est une commune calme du département du Doubs (25490). Les 2240 habitants sont en majorité des couples et célibataires. Ils sont plutôt jeunes, plutôt propriétaires de leur logement (63 %) et ont des revenus moyens (26200 euros par ménage). La commune est très calme (0,1 restaurants, cafés et bars tous les 100m) et il y a peu de commerçants (0,5 tous les 100m).
+            La taxe d'habitation, payée par l'occupant locataire ou propriétaire, est faible (15 %) et la taxe foncière y compris ordures ménagères est faible (28 %). Le maire est Charles DEMOUGE.
+            Le climat est pluvieux (1026 mm par an) et peu ensoleillé (1718 heures par an).</p>
+                    
+            <div class="carousel" data-carousel>
+                <div class="carousel-buttons">
+                  <button
+                    class="carousel-button carousel-button_previous"
+                    data-carousel-button-previous
+                  >
+                  <span class="fas fa-chevron-circle-left"><img class="flch-g" src="images/gauche.jpg" alt=""></span>
+                </button>
+                <button
+                  class="carousel-button carousel-button_next"
+                  data-carousel-button-next
+                >
+                  <span class="fas fa-chevron-circle-right"><img class="flch-d" src="images/fleche-droite-ronde_318-26616.jpg" alt=""></span>
+                </button>
+                </div>
+                <div class="slides" data-carousel-slides-container>
+                  <div class="slide">
+                    <!-- Anything can be here. Each slide can have any content -->
+                    <img  class="flc" src="images/flc.jpg" alt=""> 
+                    <p class="text-carousel">Fesches-Le-Châtel </p>
+                    
+                  </div>
+                  <div class="slide">
+                    <!-- Anything can be here. Each slide can have any content -->
+                    <img class="mairie" src="images/mairie.jpg" alt="">
+                    <p class="text-carousel">La mairie</p>
+                    
+                  </div>
+                  <div class="slide">
+                    <!-- Anything can be here. Each slide can have any content -->
+                    <img class="maison" src="images/maison-assocition.jpg" alt="">
+                    <p class="text-carousel">La maison des associations </p>
+                  </div>
+                  <div class="slide">
+                    <!-- Anything can be here. Each slide can have any content -->
+                    <img  class="parc" src="images/parc.jpg" alt=""> 
+                    <p class="text-carousel">Le carousel du parc </p>
+                    
+                  </div>
+                  <div class="slide">
+                    <!-- Anything can be here. Each slide can have any content -->
+                    <img  class="lavoir" src="images/lavoir.jpg" alt=""> 
+                    <p class="text-carousel">Un des anciens lavoirs de la ville  </p>
+                    
+                  </div>
+                  <div class="slide">
+                    <!-- Anything can be here. Each slide can have any content -->
+                    <img  class="eglise" src="images/eglise.jpg" alt=""> 
+                    <p class="text-carousel">L'église</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <script>
+              function modulo(number, mod) {
+                let result = number % mod;
+                if (result < 0) {
+                  result += mod;
+                }
+                return result;
+              }
+              
+              function setUpCarousel(carousel) {
+                function handleNext() {
+                  currentSlide = modulo(currentSlide + 1, numSlides);
+                  changeSlide(currentSlide);
+                }
+              
+                function handlePrevious() {
+                  currentSlide = modulo(currentSlide - 1, numSlides);
+                  changeSlide(currentSlide);
+                }
+              
+                function changeSlide(slideNumber) {
+                  carousel.style.setProperty('--current-slide', slideNumber);
+                }
+              
+                // get elements
+                const buttonPrevious = carousel.querySelector('[data-carousel-button-previous]');
+                const buttonNext = carousel.querySelector('[data-carousel-button-next]');
+                const slidesContainer = carousel.querySelector('[data-carousel-slides-container]');
+              
+                // carousel state we need to remember
+                let currentSlide = 0;
+                const numSlides = slidesContainer.children.length;
+              
+                // set up events
+                buttonPrevious.addEventListener('click', handlePrevious);
+                buttonNext.addEventListener('click', handleNext);
+              }
+              
+              const carousels = document.querySelectorAll('[data-carousel]');
+              carousels.forEach(setUpCarousel);
+            
+            </script>
+
+        <h2 class="titre2" >Le village et son passé : </h2>
+
+        <p class="text2" >
+
+Nos ancêtres se sont installés sur les bords d'un ruisseau.
+Des vestiges de voies, des tuiles, des briques... sont des preuves de l'existence de l'homme au bord de la Feschotte dès la période Gallo-Romaine.
+Au Moyen-Age deux seigneureries se partagent notre foncier :
+
+- Fesches Moulin qui appartient à la Seigneurerie de BELIEU et qui est détruit par les Bâlois en 1410.
+- Le Vieux Village avec son moulin, son château et le hameau du Magny (détruit en 1460) qui appartient à la Seigneurerie de CUSANCE.
+ 
+Du XV° au XVII° siècle : un village se structure
+L'intégralité du village est rattachée au Comté de Montbélaird
+Entre 35 et 60 habitants (Jacquot, Cuenot, Pechin, Bourquin)
+ - Création d'une mairie qui a en charge la basse justice (délits mineurs) pour les villages alentours.
+ 
+XVII° au XIX° siècle : l'essor démographique
+- En 1700 une population rurale d'une centaine d'âmes.
+- En 1817 : 200 habitants. Les héritiers de Frédéric JAPY installent une fabrique de vis sur les vestiges du village  Fesches Moulin.
+- Trois autres usines, des bureaux, des magasins, une ligne de chemin de fer, une gare, un canal usinier, une poste, une mairie, un temple, sept cités ouvrières, des maisons de maître et trois écoles sont construites le long de la Feschotte pour relier les deux sites de Fesches Moulin et du Vieux Village...
+2 000 habitants constituent alors une population partagée entre l'agriculture et l'industrie.
+ 
+XX° siècle : les turbulences
+- C'est d'abord un développement industriel impressionnant, principalement orienté vers la fabrication de la gamellerie militaire en fer étamé, des plaques émaillées et des articles de cuisine en fer battu, étamé, émaillé ou verni qui nécessitent un recrutement important de main-d'oeuvre dans la région mais aussi à l'étranger (Italiens, Espagnols).
+- En 1963, la population avoisine alors les 2 500 habitants. Les constructions se poursuivent avec 7 nouvelles cités ouvrières, une église, une pension pour jeunes filles, un square, une nouvelle mairie, une nouvelle poste.
+- Le modernisme, les guerres, les crises économiques ont raison de l'empire manufacturier qui fermera l'ensemble de ses usines entre 1981 et 1984.
+- Aujourd'hui un bourg de 2 310 habitants, en pleine révovation urbaine, s'inscrivant dans l'infrastructure verte et bleue de la Communauté d'Agglomération du Pays de Montbéliard.
+</p>
+ <h2 class="titre2">Fesches-Le-Châtel, aujourd'hui :</h2>
+ <p class="text2">
+
+Fesches-le-Châtel au passé industriel glorieux est aujourd'hui une commune urbaine de l'Agglomération du Pays de Montbéliard.
+ 
+Sa population active travaille principalement dans les entreprises locales sur les centres industriels de Belfort et Montbéliard mais aussi sur le territoire Helvétique tout proche.
+ 
+L'activité économique est toujours bien présente sur notre commune.
+ 
+Le fleuron de nos entreprises est bien sûr Cristel qui est présente sur les 5 continents, mais nous devons compter aussi sur les "escargots Jacot-Billey", sur les PMI/PME de Technoland I, sur plusieurs auto-entrepreneurs installés au village et sur une activité commerciale très satisfaisante.
+ 
+Notre situation privilégiée au coeur du l'Aire Urbaine Belfort-Montbéliard-Héricourt et la rénovation urbaine entreprise par les différentes municipalités qui se sont succédées depuis la chute Japy, permettent d'avoir aujourd'hui un village où il fait bon vivre, un village qui attire les jeunes ménages et qui maintient sa population à 2300 habitants.
+ 
+Les travaux de lutte contre les inondations de la Feschotte en 2008-2009, la traversée du village par la boucle structurante cyclable du Nord Communauté d'Agglo, accompagnée par l'aménagement de la balade des lutins, la rénovation et la mise aux normes des réseaux d'eau potable et d'assainissement sur la presque totalité du village (encore en cours) tous réalisés par la Communauté d'Agglomération du Pays de Montbéliard, ont accompagné le programme de rénovation urbaine.
+ 
+Ce programme communal a obtenu en 2006 le 1er prix national de la Ligue Urbaine et Rurale association d'utilité publique soutenue par le Sénat et plusieurs ministères.
+ 
+Il a consisté en l'aménagement des entrées de ville (rue Dormoy, route de Méziré 1ère phase, place Jean Monnet, rue Octave Japy), la rénovation des bâtiments publics (Temple, Maison des associations, extérieur de l'Eglise, école maternelle, bibliothèque, Mairie), la rénovation des fontaines (Canal, rue du 8 Mai, Temple) et la réfection des rues avec installation de mobilier urbain.
+ 
+La route de Méziré (2ème phase), la rénovation de l'école primaire et la transformation de l'espace Bedeville sont les grands chantiers actuellement en cours.
+ 
+Tous les services à la personne et les services publics sont présents sur le village.
+ 
+28 associations et le Conseil Municipal participent à l'animation culturelle et festive du Village
+            
+            </p>
+        
+            <p class="plus"> <a href="https://fr.wikipedia.org/wiki/Fesches-le-Ch%C3%A2tel" target="blank" > >>> En savoir plus </a> </p>
+
+    </body>
+    <div class="footer">
+<footer>
+
+   <p>
+       Mairie de Fesches-Le-Châtel 
+       <br>
+       <br>
+       1 Rue François Mitterand 25490 Fesches-Le-Châtel
+       <br>
+        -Tel: <a  href="tel:+33381930010"> 03 81 93 00 10 </a> 
+       <br>
+       
+       Contact Mairie : <a href="mailto:mairie.fesches-25@wanadoo.fr"> mairie.fesches-25@wanadoo.fr </a>
+
+   </p>
+   <p style="text-align: center"> ©  -<script>document.write(new Date().getFullYear())</script> LERICHE Amélie </p>
+  
+  
+</footer>
+</div>
+</html>

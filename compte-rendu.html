@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mairie de Fesches-Le-Châtel</title>
+    <link rel="shortcut icon" href="images/blason.png" type="image/x-icon">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+    .cRetour {
+      border-radius:40px;
+      padding:15px;
+      font-size:20px;
+      text-align:center;
+      color:#fff;
+      background:#3227da;
+      z-index:99999;
+      transition:all ease-in 0.2s;
+      position: fixed;
+      cursor: pointer;
+      bottom: 1em;
+      right: 20px;
+      display: none;
+    }
+    .cRetour:before{ content: "\25b2"; }
+   
+    </style>
+
+<script type="text/javascript"> 
+  function refresh(){
+      var t = 1000; // rafraîchissement en millisecondes
+      setTimeout('showDate()',t)
+  }
+  
+  function showDate() {
+      var date = new Date()
+      var h = date.getHours();
+      var m = date.getMinutes();
+      var s = date.getSeconds();
+      if( h < 10 ){ h = '0' + h; }
+      if( m < 10 ){ m = '0' + m; }
+      if( s < 10 ){ s = '0' + s; }
+      var time = h + ':' + m + ':' + s
+      document.getElementById('horloge').innerHTML = time;
+      refresh();
+   }
+  </script>
+
+</head>
+
+
+<div class="cRetour"></div>
+  <a class="titre-retour" href="actualites.html">  <h1 class="retour-site"> >> Retour au site </h1> </a>
+   
+  <h4 class="titre-rendu">Compte rendus 2016 :</h4>
+  
+  <ol >
+        <li ><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2016/CR_DU_4_01_2016.pdf"target="_blank" >Conseil Municipal Du 4 Janvier 2016</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/conseil_municipal_du_31_mai_2011/CR_DU_CM_DU_10_02_2016.pdf"target="_blank" >Conseil Municipal Du 10 Février 2016</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2016/CR_DU_CONSEIL_MUNICIPAL_8_MARS_2016.pdf"target="_blank" >Conseil Municipal Du 8 Mars 2016</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2016/CR_DU_CONSEIL_MUNICIPAL_12_AVRIL_2016_01.pdf" target="_blank">Conseil Municipal Du 12 Avril 2016</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2016/CR_du_28_juin_2016.pdf" target="_blank" >Conseil Municipal Du 28 Juin 2016
+        </li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2016/COMPTE_RENDU_DU_14_09_2016.pdf"target="_blank" >Conseil Municipal Du 14 Septembre 2016</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2016/COMPTE_RENDU_CM_DU_5_DECEMBRE_2016.pdf"target="_blank">Conseil Municipal Du 5 Décembre 2016</li></a>
+    </ol>
+
+    <h4 class="titre-rendu" >Compte rendus 2017 :</h4>
+
+    <ol>
+
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2017/cpt_rendu_conseil_du_4_janvier_2017.pdf"target="_blank">Conseil Municipal Du 4 Janvier 2017
+        </li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2017/Cpte_CM_du_8_03_17.pdf"target="_blank">Conseil Municipal Du 8 Mars 2017</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2017/cr_conseil_du_11_avril_2017.pdf"target="_blank">Conseil Municipal Du 11 Avril 2017</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2017/cr_conseil_du19_juin_2017.pdf"target="_blank">Conseil Municipal Du 19 Juin 2017</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2017/cr_conseil_du24_octobre_2017.pdf"target="_blank">Conseil Municipal Du 24 Octobre 2017</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2017/cr_conseil_du_4_DECEMBRE_2017.pdf"target="_blank">Conseil Municipal Du 4 Décembre 2017</li></a>
+    </ol>
+
+    <h4 class="titre-rendu" >Compte rendus 2018 :</h4>
+    <ol>
+    
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/2018/cr_conseil_du_10_avril_2018.pdf"target="_blank">Conseil Municipal Du 10 Avril 2018</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/2018/cr_conseil_du_18_JUIN_2018.pdf"target="_blank">Conseil Municipal Du 18 Juin 2018</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/INFO_MUNICIPALE/2018/cr_conseil_du_30_juillet_2018.pdf"target="_blank">Conseil Municipal Du 30 Juillet 2018</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/2018/cr_conseil_du_1er_octobre_2018_01.pdf"target="_blank">Conseil Municipal Du 1Er Octobre 2018</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/cr_conseil_du_21_decembre_2018.pdf"target="_blank">Conseil Municipal Du 21 Décembre 2018</li></a>
+    </ol>
+
+    <h4 class="titre-rendu" >Compte rendus 2019 :</h4>
+ <ol>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/cr_conseil_du_26_fevrier_2019.pdf"target="_blank">Conseil Municipal Du 26 Février 2019
+        </li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/cr_conseil_du_19_mars_2019.pdf"target="_blank">Conseil Municipal Du 19 Mars 2019</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/cr_conseil_du_9_AVRIL_19.pdf"target="_blank">Conseil Municipal Du 9 Avril 2019</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/cr_conseil_du_11_juin_2019.pdf"target="_blank">Conseil Municipal Du 11 Juin 2019
+        </li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/cr_conseil_du_23_juillet_2019.pdf"target="_blank">Conseil Municipal Du 23 Juillet 2019</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/cr_conseil_07_11_2019.pdf"target="_blank">Conseil Municipal Du 7 Novembre 2019</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_CM_2019/CR_CONSEIL_MUNICIPAL_18_DECEMBRE_2019.pdf"target="_blank">Conseil Municipal Du 18 Décembre 2019</li></a>
+ </ol>
+ <h4 class="titre-rendu" >Compte rendus 2020 :</h4>
+
+ <ol>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/uploads/tt_news/Conseil%20municipal%20du%2027%20f%C3%A9vrier%202020">Conseil Municipal Du 27 Février 2020
+        </li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR-CM_2020/CR_du_CM_du_20_juillet.pdf"target="_blank">Conseil Munucipal  Du 20 Juillet 2020</li></a>
+        <li> <a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR-CM_2020/compte_rendju_conseil_du_5-10-2020.pdf"target="_blank">Conseil Municipal Du 5 Octobre 2020</li></a>
+ </ol>
+
+        <h4 class="titre-rendu">Compte rendus 2021 :</h4>
+
+<ol>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_du_CM_2021/cr_conseil_du_12_avril_2021.pdf"target="_blank">Conseil Municipal Du 1Er Février 2021</li></a>
+        <li> <a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_du_CM_2021/cr_conseil_du_12_avril_2021.pdf"target="_blank">Conseil Municipal Du 12 Avril 2021</li></a>
+        <li><a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_du_CM_2021/cr_conseil_du_22_JUIN_2021.pdf"target="_blank"> Conseil Municipal Du 22 Juin 2021
+        </li></a>
+        <li> <a class="lien-compte-rendu" href="http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_du_CM_2021/compte_rendu_CM_du_11-10-2021.pdf"target="_blank">Conseil Municipal Du 11 Octobre 2021
+        </li></a>
+        <li> <a class="lien-compte-rendu" href=" http://www.mairiefescheslechatel.fr/fileadmin/fesches/Cpte_rendus_conseils_municipaux/CR_du_CM_2021/cr_conseil_du_13_Decembre_2021.pdf"target="_blank">Conseil Municipal Du 13 Décembre 2021 </li></a>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Fesches-Le-Châtel</title>
+    <link rel="shortcut icon" href="images/blason.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <style>
+    .cRetour {
+      border-radius:40px;
+      padding:15px;
+      font-size:20px;
+      text-align:center;
+      color:#fff;
+      background:#3227da;
+      z-index:99999;
+      transition:all ease-in 0.2s;
+      position: fixed;
+      cursor: pointer;
+      bottom: 1em;
+      right: 20px;
+      display: none;
+    }
+    .cRetour:before{ content: "\25b2"; }
+    .cRetour:before{ content: "\25b2"; }
+    </style>
+    
+    
+       <script type="text/javascript"> 
+        function refresh(){
+            var t = 1000; // rafraîchissement en millisecondes
+            setTimeout('showDate()',t)
+        }
+        
+        function showDate() {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if( h < 10 ){ h = '0' + h; }
+            if( m < 10 ){ m = '0' + m; }
+            if( s < 10 ){ s = '0' + s; }
+            var time = h + ':' + m + ':' + s
+            document.getElementById('horloge').innerHTML = time;
+            refresh();
+         }
+        </script>
+   
+      
+    
+</head>
+<body onload=showDate(); >
+<header class="header" role="banner">
+  
+  
+    <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+  </header>
+  
+    
+
+
+
+  <nav role="navigation" class="navigation" tabindex="0">
+ 
+        
+        
+     <a class="navigation__link" href="index.html">  Fesches-Le-Châtel </a>
+     <a class="navigation__link" href="actualites.html">  Actualités </a>
+     <a class="navigation__link" href="histoire.html">  Histoire de la commune </a>
+     <a class="navigation__link" href="horaire.html">   Horaires et contacts </a>
+     <a class="navigation__link" href="elus.html">   Les élus /Le personnel communal </a>
+     <a class="navigation__link" href="services.html">  Services à la population </a>
+     <a class="navigation__link" href="associations.html">  Les associations </a>
+     <a class="navigation__link" href="environnement.html">  Environnement </a>
+     <a class="navigation__link" href="urbanisme.html"> Urbanisme </a>
+
+       
+    </nav>
+    <main class="main" role="main">
+    <script>
+        (function() {
+            function toggleNav() {
+            // Define targets
+            var target = document.querySelector('.main');
+            var button = document.querySelector('.burger-button');
+            var navigation = document.querySelector('.navigation');
+            
+            // click-touch event
+            if ( button ) {
+              button.addEventListener('click', 
+              function (e) { 
+                navigation.classList.toggle('is-opened'); 
+                navigation.focus();
+                e.preventDefault();
+              }, false );
+            }
+            } // end toggleNav()
+            
+            toggleNav();
+            }());
+        </script>
+
+
+    
+
+<span id='horloge' ></span>
+<script>            
+    jQuery(document).ready(function() {
+      var duration = 500;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 100) {
+          
+  
+          jQuery('.cRetour').fadeIn(duration);
+        } else {
+          
+          jQuery('.cRetour').fadeOut(duration);
+        }
+      });
+                    
+      jQuery('.cRetour').click(function(event) {
+        // Un clic provoque le retour en haut animé.
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
+    </script>
+
+<div class="cRetour"></div>
+    
+    
+
+    <div class="haut">  
+    <img class="blason" src="images/blason.png" alt="">
+    <h1>Les associations</h1>
+    
+    </div>
+   
+      <div class="menu-text">
+
+       <pre class="asso-text"><b>          Football : AS Méziré/Fesches-le-Châtel</b> 
+
+        M. VILLEMIN André
+        19 rue du bois bourgeois - 25200 MONTBELIARD    
+        <a class="num-mail" href="tel:+33670473703">06 70 47 37 03  </a>
+        
+        <b>  Amicale des Educateurs U.S. Fesches :</b> 
+        
+        RUFFONI Frédéric 13 rue des roches- 25550 BAVANS
+        <a class="num-mail" href="tel:+33381975186"> 03 81 97 51 86</a>
+
+        PRATI Jean-Marie
+        1 impasse Paul Emile Victor - 25200 GRAND-CHARMONT 
+        <a class="num-mail" href="tel:+33381940645"> 03 81 94 06 45</a>
+        
+        <b> Ski et Montagne :  </b> 
+        
+        MORASCHETTI Marie-Hélène 14 rue des Arvoiges - 25460 ETUPES
+        <a class="num-mail" href="tel:+33381932711">  03 81 93 27 11</a>
+        
+        <b> Tennis Club :</b> 
+
+        GENTILHOMME Nicole   7 rue du Parc - 
+        25490 FESCHES-LE-CHATEL  
+        <a class="num-mail" href="tel:+33381961288"> 03 81 96 12 88</a>
+        
+        <b> Hathor : Cours danse Moderne-jazz</b> 
+        
+        Mme BOILLOT Sylvie
+        11 route de Méziré - 25490 FESCHES-LE-CHATEL
+        <a class="num-mail" href="tel:+33660323710"> 06 60 32 37 10</a>
+        
+        <b> Tennis de table :</b> 
+        
+        BARBIER François  
+        7 rue Neuve - 25460 ETUPES
+        <a class="num-mail" href="tel:+33381941974"> 03 81 94 19 74</a>
+         
+        <b> Gym-Santé et Step de Fesches : (gymnastique et danse...)</b> 
+        
+        BONTEMPS Evelyne   
+        4 rue des Boulets Montants - 25490 FESCHES-LE-CHATEL
+        <a class="num-mail" href="tel:+33621905679">  06 21 90 56 79</a>
+         
+        
+        <b> Spirit Country de Fesches-le-Châtel : </b> 
+        
+        PEUGEOT Monique   
+        1 rue des Roses - 25490 FESCHES-LE-CHATEL L
+        <a class="num-mail" href="tel:+33381930390">03 81 93 03 90  </a>
+        mail : <a class="num-mail" href="mailto:spiritcountry.club25@gmail.com"> spiritcountry.club25@gmail.com </a>
+
+
+<b>Comité des Fêtes :</b> 
+
+ALCON Patrick  
+58 rue de Verdun - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33678078692">06 78 07 86 92</a>
+
+<b>  Association Communale de chasse :</b> 
+
+BENIER Cédric 
+1 Clos des moitrances - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33381932781">03 81 93 27 81</a>
+
+<b>  A.A.P.P.M.A. :</b> 
+
+ CUENOT Jean-Luc   
+ 29 rue des Voironnes - 25490 FESCHES-LE-CHATEL 
+                                                          <a class="num-mail" href="tel:+33680617726">06.80.61.77.26</a>                                                      
+
+ <b> Les Amis de l'école :</b> 
+
+SCHMITT Aurore
+4 rue des Grands Champs - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33633741711">06.33.74.17.11</a>
+
+<b> Fédération Combattants Républicains :</b>
+
+FAROLFI Jean-Pierre 
+4 le pré des corvées  - 90100 FECHE L'EGLISE   
+<a class="num-mail" href="tel:+33384563667">03.84.56.36.67 </a>
+                                                                                                             
+<b> F.N.A.C.A. et Comité de liaison du Monde Combattants:</b>
+
+LAMBERT Jean   
+10 rue de Verdun - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33381930011">03 81 93 00 11</a>
+
+<b> Amicale des Donneurs de Sang :</b>
+
+ VILAPLANA Rolande  
+ 28 rue de la source - 25600 DAMBENOIS       
+ <a class="num-mail" href="tel:+33381320303">03.81.32.03.03</a>
+                                                                                                        
+ <b> Club 3ème âge ''Les Cailloulus" :</b>
+
+RENAUDE Gilbert 
+48 avenue du Gal De Gaulle - 25460 ETUPES
+<a class="num-mail" href="tel:+333381941180">03 81 94 11 80</a>
+
+<b> Foyer des Jeunes :</b>
+
+PONS Geneviève   
+34 rue Emile Beley - 25460 ETUPES
+<a class="num-mail" href="tel:+33381951539">03 81 95 15 39</a>
+
+<b> ACEPU Association Cultuelle de l'église protestante unie de FLC :</b>
+
+EGREMY André 
+13 impasse Bellevue- 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33381961650">03 81 96 16 50</a>
+
+<b> La Saint-Laurent :</b>
+
+BOUZAT Daniel
+1 rue de la gare - 25490 FESCHES LE CHÂTEL
+<a class="num-mail" href="tel:+33950889213">09 50 88 92 13</a>
+
+<b> Secours Catholique:</b>
+
+NEDEZ Gérard
+7 rue du camping - 25490 FESCHES LE CHÂTEL
+
+<b> Ligue contre le Cancer :</b>
+
+DEBROSSE Alain 
+3 rue Octave Japy - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33381938781">03 81 93 87 81</a>
+
+<b> Les Petits-Pas :</b>
+
+ FABBRI Laurence  
+5A impasse P. Lucien Muller - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33381997663">03 81 99 76 63</a>
+
+<b> EEUdF (éclaireurs unionistes) :</b>
+
+GUEHL Nicolas
+12 rue des Chardonnerets BP21 - 25700 VALENTIGNEY
+
+<b> Les Tupins :</b>
+
+HAENSLER Monique  
+22 rue du Parc - 25490 FESCHES-LE-CHATEL 
+<a class="num-mail" href="tel:+33954302199">09 54 30 21 99</a>
+
+<b> Scraptoutdoubs :</b>
+
+ROTA Laëtitia  
+15 rue Louis Dormoy - 25490 FESCHES-LE-CHATEL 
+<a class="num-mail" href="tel:+33688445634">06 88 44 56 34</a>
+
+<b> L'atelier des Mamies :</b>
+
+PEUGEOT Jacqueline
+12 grande rue - 25490 ALLENJOIE
+<a class="num-mail" href="tel:+33381930524">03 81 93 05 24</a>
+
+<b> France Lyme :</b>
+
+JUILLARD DEHOS Annie
+51 bis rue de Verdun - 25490 FESCHES-LE-CHATEL
+<a class="num-mail" href="tel:+33637772072">06.37.77.20.72</a>
+
+<b> ARPAC :</b>
+
+SCANETTI Gérard
+3 bis rue de Bourogne - 25490 ALLENJOIE
+<a class="num-mail" href="tel:+33682082533">06 82 08 25 33</a>
+
+ 
+        
+        </pre>
+
+        
+        </div>
+      </body>
+      <div class="footer">
+ <footer>
+  
+     <p>
+         Mairie de Fesches-Le-Châtel 
+         <br>
+         <br>
+         1 Rue François Mitterand 25490 Fesches-Le-Châtel
+         <br>
+          -Tel: <a  href="tel:+33381930010"> 03 81 93 00 10 </a> 
+         <br>
+         
+         Contact Mairie : <a href="mailto:mairie.fesches-25@wanadoo.fr"> mairie.fesches-25@wanadoo.fr </a>
+
+     </p>
+     <p style="text-align: center"> ©  -<script>document.write(new Date().getFullYear())</script> LERICHE Amélie </p>
+    
+    
+ </footer>
+</div>
+</html>

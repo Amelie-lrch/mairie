@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Fesches-Le-Châtel</title>
+    <link rel="shortcut icon" href="images/blason.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <style>
+    .cRetour {
+      border-radius:40px;
+      padding:15px;
+      font-size:20px;
+      text-align:center;
+      color:#fff;
+      background:#3227da;
+      z-index:99999;
+      transition:all ease-in 0.2s;
+      position: fixed;
+      cursor: pointer;
+      bottom: 1em;
+      right: 20px;
+      display: none;
+    }
+    .cRetour:before{ content: "\25b2"; }
+    .cRetour:before{ content: "\25b2"; }
+    </style>
+    
+    
+       <script type="text/javascript"> 
+        function refresh(){
+            var t = 1000; // rafraîchissement en millisecondes
+            setTimeout('showDate()',t)
+        }
+        
+        function showDate() {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if( h < 10 ){ h = '0' + h; }
+            if( m < 10 ){ m = '0' + m; }
+            if( s < 10 ){ s = '0' + s; }
+            var time = h + ':' + m + ':' + s
+            document.getElementById('horloge').innerHTML = time;
+            refresh();
+         }
+        </script>
+   
+      
+    
+</head>
+<body onload=showDate(); >
+<header class="header" role="banner">
+  
+  
+    <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+  </header>
+  
+    
+
+
+
+  <nav role="navigation" class="navigation" tabindex="0">
+ 
+        
+        
+     <a class="navigation__link" href="index.html">  Fesches-Le-Châtel </a>
+     <a class="navigation__link" href="actualites.html">  Actualités </a>
+     <a class="navigation__link" href="histoire.html">  Histoire de la commune </a>
+     <a class="navigation__link" href="horaire.html">   Horaires et contacts </a>
+     <a class="navigation__link" href="elus.html">   Les élus /Le personnel communal </a>
+     <a class="navigation__link" href="services.html">  Services à la population </a>
+     <a class="navigation__link" href="associations.html">  Les associations </a>
+     <a class="navigation__link" href="environnement.html">  Environnement </a>
+     <a class="navigation__link" href="urbanisme.html"> Urbanisme </a>
+
+       
+    </nav>
+    <main class="main" role="main">
+    <script>
+        (function() {
+            function toggleNav() {
+            // Define targets
+            var target = document.querySelector('.main');
+            var button = document.querySelector('.burger-button');
+            var navigation = document.querySelector('.navigation');
+            
+            // click-touch event
+            if ( button ) {
+              button.addEventListener('click', 
+              function (e) { 
+                navigation.classList.toggle('is-opened'); 
+                navigation.focus();
+                e.preventDefault();
+              }, false );
+            }
+            } // end toggleNav()
+            
+            toggleNav();
+            }());
+        </script>
+
+
+    
+
+<span id='horloge' ></span>
+<script>            
+    jQuery(document).ready(function() {
+      var duration = 500;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 100) {
+          
+  
+          jQuery('.cRetour').fadeIn(duration);
+        } else {
+          
+          jQuery('.cRetour').fadeOut(duration);
+        }
+      });
+                    
+      jQuery('.cRetour').click(function(event) {
+        // Un clic provoque le retour en haut animé.
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
+    </script>
+
+<div class="cRetour"></div>
+    
+    
+
+    <div class="haut">  
+    <img class="blason" src="images/blason.png" alt="">
+    <h1>Environnement</h1>
+    </div>
+
+    <div class="environnement">
+
+        <img class="pointr" src="images/recyclage.jpg" alt="">
+    <h2>Point "R" :</h2>
+    
+
+    <p> Verre, papiers, cartons propres, bouteilles plastiques, emballages types ''briques'', boîtes métalliques
+    </p>
+     <h4>Lieux : </h4>
+    <ol>
+        <li> Rue de l'Egalité (parking du cimetière)</li>
+        <li>Lieu-dit ''Le Rondelot'' (derrière le Crédit Agricole) </li>
+        <li>Rue du 8 Mai (au pied du Lotissement du Parc)</li>
+        <li>Lieu-dit "Le Pâquis"</li>
+        <li>Rue Pierre Lucien Muller : verre uniquement</li>
+    </ol>
+
+
+    <p>
+        Les déchets à recycler doivent être déposés en vrac au point recyclage <b>(Ne jamais les imbriquer)</b> 
+       <br>
+       Les déchets plastiques à déposer doivent être des emballages <b>(et non des plastiques de type tuyau de jardin, jouet, pièce automobile...)</b>
+       </p>
+
+       <h2>Collecte par le Pays De Montbéliard : 
+    </h2>
+
+    <p>
+        Ordures ménagères : lundi matin <br>
+        Déchetterie mobile : sur la place du Général de Gaulle le 2ème jeudi de chaque mois de 14h à 17h <br>
+        Contact : <a href="tel:+33381318499">03.81.31.84.99</a> 
+        </p>
+
+
+        <img class="decheterie" src="images/deheterie.jpg" alt="">
+        <h2>Déchèterie : </h2>
+
+        
+
+        <p>Contact :<a href="tel:+33381318499"> 03.81.31.84.99</a>
+            Carte d'accès à la déchetterie
+            Pour obtenir votre carte d'accès vous devez vous rendre directement à la déchetterie
+             muni d'un justificatif de domicile de moins de 3 mois
+            Rue de Brognard, 25600 VIEUX-CHARMONT
+            Pour dépôt de déchets verts, de bois, textile, batteries, bouteilles plastiques, emballages
+             type ''briques'', gravats, huiles moteur, huiles ménagères...
+            Gratuit pour les particuliers
+            
+            Vente de compost : <a href="tel:+3338195237"> 03.81.95.23.37</a>
+            <br> <br>
+           <b> Horaires d'été (d'avril à octobre) </b>
+            <br> <br>
+            lundi, mardi, mercredi, jeudi, vendredi : 9h à 12h / <br> 14h à 17h15 <br>
+            samedi : 9h à 12h / 13h30 à 18h15
+            <br> <br>
+           <b> Horaires d'hivers (de novembre à mars) </b>
+             <br><br>
+           lundi, mardi, mercredi, jeudi, vendredi : 9h à 12h / <br> 13h30 à 17h15 <br>
+           samedi : 9h à 12h / 13h30 à 17h15
+            </p>
+
+            <h2>Composteur :</h2>
+
+            <p>lundi, mardi, mercredi, jeudi, vendredi : 9h à 12h / 13h30 à 17h15
+                <br>
+                samedi : 9h à 12h / 13h30 à 17h15
+                <br>
+                
+                Pour l'acquisition d'un composteur vous devez vous adresser directement <br>
+                à Compostière, rue de Brognard à vieux Charmont
+                ouvert du lundi au vendredi de 9h à 12 et de 13h à 17h <br>
+               <b> Prix : Composteur </b> bois 31€<br>
+               <b> Prix : Composteur </b> plastique 18€
+                <br>
+                Règlement par chèque ou carte bancaire uniquement
+                </p>
+
+                <h2>Encombrant :</h2>
+
+                <p>La collecte se fait uniquement sur appel téléphonique :<a href="tel:+33381318499"> 03 81 31 84 99</a> <br> <br>
+                   <b>voici comment procéder :</b> <br> <br>
+Consultez le calendrier pour connaître la prochaine date de collecte des encombrants de votre secteur ;
+Au moins 48 H avant cette date, appelez le <a href="tel:+33381318499">03 81 31 84 99 </a>  du lundi au vendredi de 8h à 12h et de 13h à 17h ;
+Précisez à la standardiste vos coordonnées ainsi que la nature et la quantité des encombrants à enlever.
+Vous pouvez également programmer votre collecte via internet sur le lien suivant : www.agglo-montbeliard.fr/index.php, mis en place par Pays de Montbéliard Agglomération.
+
+En aucun cas, les agents de collecte ne sont habilités à aller chercher vos encombrants dans votre domicile.
+
+Vos encombrants doivent être déposés sur le trottoir afin d'être collectés à partir de 5 heures du matin.
+
+Déchets vert : 
+
+Plus de ramassage des branchages en porte à porte, les déchets doivent être déposés à la déchetterie de Grand Charmont.
+
+                </p>
+                 
+                <img class="bruit" src="images/bruit.jpg" alt="">
+                <h2>Bruits:</h2>
+
+                <p> <b>Les travaux de bricolage et de jardinage réalisés par les particuliers à l'aide d'outils 
+                    ou d'appareils causant une gêne pour le voisinage en raison de leur intensité sonore :</b>
+                    <br> <br> 
+                    tondeuses <br> 
+                    perceuses <br>
+                    scies <br>
+                    débrousailleuses <br>
+                    réparation de véhicules et autres… <br> <br>
+                    
+                   <b> Ne peuvent être effectués que :</b> <br>
+                    les jours ouvrables (du lundi au vendredi ) : <br>  8h30-12h et 14h-19h30 <br>
+                    les samedis : 9h-12h et 15h-19h <br>
+                    Interdiction totale les dimanches et jours fériés <br>
+                    Arrêtés Préfectoral et Municipal
+                    </p>
+
+                    <h2>Brulage :</h2>
+                    
+                    <p>Le brûlage en plein air des déchets et détritus de toute nature est rigoureusement interdit dans les agglomérations.
+                        Les jardins et leurs aménagements, ainsi que les plantations, doivent être soigneusement entretenus de façon à maintenir l'hygiène et la salubrité des habitations.
+                        </p>
+
+                        <h2>Divagation des animaux et des piétons : </h2>
+
+                        <p>
+                            La divagation des animaux et la circulation des piétons et de tous véhicules <b class="interdit"> SONT INTERDITES </b> dans les champs.
+                            </p>
+
+                            <h2>
+                                Taille des haies :
+                               </h2>
+
+                               <p>Chaque propriétaire est tenu de respecter la réglementation en vigueur, c'est à dire une hauteur de 1,20m en bordure de voirie et de 1,50m en limite séparative.</p>
+
+                               <h2>Non respect de la règlementation :</h2>
+
+                               <p>Le non respect de cette règlementation pourra entraîner une amende dressée par les gardes nature.</p>
+
+                            </div>
+                          </body>
+                          <div class="footer">
+                     <footer>
+                      
+                         <p>
+                             Mairie de Fesches-Le-Châtel 
+                             <br>
+                             <br>
+                             1 Rue François Mitterand 25490 Fesches-Le-Châtel
+                             <br>
+                              -Tel: <a  href="tel:+33381930010"> 03 81 93 00 10 </a> 
+                             <br>
+                             
+                             Contact Mairie : <a href="mailto:mairie.fesches-25@wanadoo.fr"> mairie.fesches-25@wanadoo.fr </a>
+                    
+                         </p>
+                         <p style="text-align: center"> ©  -<script>document.write(new Date().getFullYear())</script> LERICHE Amélie </p>
+                        
+                        
+                     </footer>
+                    </div>
+</html>

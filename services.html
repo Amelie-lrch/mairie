@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Fesches-Le-Châtel</title>
+    <link rel="shortcut icon" href="images/blason.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <style>
+    .cRetour {
+      border-radius:40px;
+      padding:15px;
+      font-size:20px;
+      text-align:center;
+      color:#fff;
+      background:#3227da;
+      z-index:99999;
+      transition:all ease-in 0.2s;
+      position: fixed;
+      cursor: pointer;
+      bottom: 1em;
+      right: 20px;
+      display: none;
+    }
+    .cRetour:before{ content: "\25b2"; }
+    .cRetour:before{ content: "\25b2"; }
+    </style>
+    
+    
+       <script type="text/javascript"> 
+        function refresh(){
+            var t = 1000; // rafraîchissement en millisecondes
+            setTimeout('showDate()',t)
+        }
+        
+        function showDate() {
+            var date = new Date()
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            if( h < 10 ){ h = '0' + h; }
+            if( m < 10 ){ m = '0' + m; }
+            if( s < 10 ){ s = '0' + s; }
+            var time = h + ':' + m + ':' + s
+            document.getElementById('horloge').innerHTML = time;
+            refresh();
+         }
+        </script>
+   
+      
+    
+</head>
+<body onload=showDate(); >
+<header class="header" role="banner">
+  
+  
+    <button class="burger-button" type="button" role="button" aria-label="open/close navigation"><i></i></button>
+  </header>
+  
+    
+
+
+
+  <nav role="navigation" class="navigation" tabindex="0">
+ 
+        
+        
+     <a class="navigation__link" href="index.html">  Fesches-Le-Châtel </a>
+     <a class="navigation__link" href="actualites.html">  Actualités </a>
+     <a class="navigation__link" href="histoire.html">  Histoire de la commune </a>
+     <a class="navigation__link" href="horaire.html">   Horaires et contacts </a>
+     <a class="navigation__link" href="elus.html">   Les élus /Le personnel communal </a>
+     <a class="navigation__link" href="services.html">  Services à la population </a>
+     <a class="navigation__link" href="associations.html">  Les associations </a>
+     <a class="navigation__link" href="environnement.html">  Environnement </a>
+     <a class="navigation__link" href="urbanisme.html"> Urbanisme </a>
+
+       
+    </nav>
+    <main class="main" role="main">
+    <script>
+        (function() {
+            function toggleNav() {
+            // Define targets
+            var target = document.querySelector('.main');
+            var button = document.querySelector('.burger-button');
+            var navigation = document.querySelector('.navigation');
+            
+            // click-touch event
+            if ( button ) {
+              button.addEventListener('click', 
+              function (e) { 
+                navigation.classList.toggle('is-opened'); 
+                navigation.focus();
+                e.preventDefault();
+              }, false );
+            }
+            } // end toggleNav()
+            
+            toggleNav();
+            }());
+        </script>
+
+
+    
+
+<span id='horloge' ></span>
+<script>            
+    jQuery(document).ready(function() {
+      var duration = 500;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 100) {
+          
+  
+          jQuery('.cRetour').fadeIn(duration);
+        } else {
+          
+          jQuery('.cRetour').fadeOut(duration);
+        }
+      });
+                    
+      jQuery('.cRetour').click(function(event) {
+        // Un clic provoque le retour en haut animé.
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+    });
+    </script>
+
+<div class="cRetour"></div>
+
+    <div class="haut">  
+    <img class="blason" src="images/blason.png" alt="">
+    <h1>Périscolaire & Francas</h1>
+  
+    </div>
+    <ul class="sous-menu">
+      <a href="#cantine"> <li>Cantine & Périscolaire</li></a> 
+      <a href="#francas">  <li >Francas</li> </a>
+       <a href="#ado"> <li>Club ado</li></a>
+ 
+    </ul>
+      <div class="menu-text">
+          <div class="cantine">
+
+        <div id="cantine"> <h2 class="text-cantine">   Cantine :</h2> </div>
+
+        <p >
+            La Restauration Scolaire
+
+Nous travaillons avec les cuisines de l'ADAPEI, la cuisine d'UZEL.Nous favorisons les circuits courts et les produits régionaux.
+
+
+La composition des repas, leur qualité, la diversité des menus, ce sont quelques unes des questions qui sont régulièrement posées par des parents désireux d'inscrire leur enfant à la restauration scolaire.
+
+
+ 
+
+LES ENFANTS DE L'ÉCOLE MATERNELLE ET DE  L'ÉCOLE PRIMAIRE SONT ACCUEILLIS DANS LE CADRE DU PERISCOLAIRE
+
+Les tarifs cantine comprennent l'animation assurée par les FRANCAS et le repas, et sont fixés en fonction du quotient familial:
+            
+            </p>
+               <div class="text-cantine">
+            <h4 class="quotient"  >Quotient familial : jusqu'a 800 :</h4>
+            <ol >
+                <li>Tarif 7h30-8h30 : 1.50€ </li>
+                <li>Tarif repas + animation : 4€ </li>
+                <li>Tarif 16h30-17h30 : 1.50€</li>
+                <li>Tarif 16h30-18h : 2.25€</li>
+            </ol>
+            <h4 class="quotient" >Quotient familial : de 801 à 1200 : </h4>
+            <ol >
+                <li>Tarif 7h30-8h30 : 2€ </li>
+                <li>Tarif repas + animation : 6€ </li>
+                <li>Tarif 16h30-17h30 : 2€</li>
+                <li>Tarif 16h30-18h : 3€</li>
+            </ol>
+
+            <h4 class="quotient">Quotient familial : + 1200 : </h4>
+            <ol >
+                <li>Tarif 7h30-8h30 : 2€ </li>
+                <li>Tarif repas + animation : 7€ </li>
+                <li>Tarif 16h30-17h30 : 2€</li>
+                <li>Tarif 16h30-18h : 3€</li>
+            </ol>
+         
+            <p class="euro">1€ à ajouter au tarif repas pour les familles domiciliées à l'extérieur. 
+                <br> <br></p>
+
+              </div>
+
+                <p class="rappel">RAPPEL : l'annulation des repas doit être signifiée en mairie au minimum 48h avant la date du repas. <br>
+                     Le non respect de cette obligation entrainera la facturation automatique du repas. <br>
+                
+                Vous devez contacter le secrétariat de mairie
+                
+                <a class="num-mail" href="mailto:scretariat.mairie.fesches-25@wanadoo.fr"> secretariat.mairie.fesches-25@wanadoo.fr</a>
+                <br>
+                <a class="num-mail" href="tel:+33381930010">03.81.93.00.10 </a></p>
+
+                <img class="repas" src="images/cantine.jpg" alt="">
+
+                <p>Animations sur toute l'année :
+
+                    Les activités sont axées sur les différents temps de l'année comme la chandeleur, le carnaval....
+                    
+                     
+                    
+                    Comme l'année dernière, les enfants peuvent prendre un moment pour faire leurs devoirs, je rappelle que cela n'empêche pas les parents d'avoir un regard dessus et que nous ne garantissons pas les résultats !
+                    
+                     
+                    
+                    Mercredis (3-12 ans) :
+                    
+                    Tous les mercredis de 8h30 à 17h dans les locaux périscolaires à l'école du Rondelot, des activités sont proposées. Un accueil est possible de 7h30 à 8h30. Les inscriptions, obligatoires, se font auprès de Julie elles peuvent être ponctuelles (à la journée ou  la demi-journée avec ou sans repas).
+                    
+                    Ces mercredis seront l'occasion de découvrir la nature et la faune locale, tout en se repérant dans l'espace et le temps, de faire acquérir à chacun les notions de vie collective, de respect mutuel et permettre à chaque enfant de développer ses facultés de réflexion ; les activités proposées durant ces journées doivent être au service de ces intentions éducatives
+
+                    
+                    </p>
+
+
+                </div>   
+
+        </div>
+
+        <ul class="sous-menu">
+            <a href="#cantine"> <li>Cantine & Périscolaire</li></a> 
+            <a href="#francas">  <li >Francas</li> </a>
+             <a href="#ado"> <li>Club ado</li></a>
+     
+        </ul>
+
+  <div id="francas"> <h2 class="titre-francas">Francas : </h2></div>  
+
+ <pre>
+    LES FRANCAS / Les mercredis
+    
+    ACCUEIL LES MERCREDIS TOUTE L'ANNEE SCOLAIRE :
+    
+     L'accueil les mercredis et les petites vacances scolaires (automne, hiver et printemps) a lieu de 8h30 à 17h dans les locaux de l'école du Rondelot dès l'âge de 3 ans.
+     </pre>
+
+     <h4 class="prix-francas">Quotient familial : -800</h4>
+            <ol class="tarif" >
+                <li>Tarif journée + repas : 3.60€ </li>
+                <li> Tarif journée sans repas: 2€ </li>
+                <li> Tarif demi-journée : 1.50€ </li>
+                
+            </ol>
+            <h4 class="prix-francas">Quotient familial : +800 </h4>
+            <ol class="tarif">
+                <li>Tarif journée + repas : 7.60€ </li>
+                <li> Tarif journée sans repas: 5€ </li>
+                <li> Tarif demi-journée : 3€ </li>
+            </ol>
+
+            <h4 class="prix-francas"> Familles hors F.L.C </h4>
+            <ol class="tarif">
+                <li>Tarif journée + repas : 11.60€ </li>
+                <li> Tarif journée sans repas: 8€ </li>
+                <li> Tarif demi-journée : 5€ </li>
+            </ol>
+<pre>
+    <br>
+    Horaires :
+    
+    À la journée : 8h30-17h00
+    À la demi-journée : 8h30-11h30 et 13h30-17h00
+     Le mercredi possibilité dès 7h30 moyennant une majoration 1€
+    </pre>
+     
+    
+     
+    <p class="inscription">
+    Inscriptions pour les vacances scolaires
+    <br><br>
+    
+  <b> Conditions d'incription : </b>
+    
+    Fournir un justificatif de domicile, vos numéros allocataires CAF et de sécurité sociale, chèques CESU.
+    <br>
+    Transmettre sous enveloppe la copie des vaccinations.
+    Suite à de nombreux abus toute modification d'inscription doit être signalée 48h à l'avance auprès de la directrice soit par tel. soit par mail.
+    
+    Merci de bien respecter les dates d'inscriptions qui permettent de commander les repas, préparer le matériel...
+    </p>
+    <h4 class="prix-francas">  TARIF de 8h30 à 17h00 avec repas  </h4>
+    
+                   <ol class="tarif"> 
+                       <li> Avec CAF : 3.60€</li>
+    
+                  <li> Sans CAF : 7.60€</li>
+    
+                  <li>  Hors régime : 11.60€</li>
+                </ol>
+     
+                    <h4 class="prix-francas">  TARIF 8h30-11h30/13h30-17h00 sans repas:</h4>
+                    
+                    <ol class="tarif">
+                  <li>Avec CAF : 2.00€</li> 
+    
+                   <li> Sans CAF : 5.00€</li> 
+    
+                   <li>Hors régime : 8.00€</li> 
+                </ol>
+    
+            </p>
+    
+              <P class="contacte-julie"> Contact : Julie <a class="num-mail" href="tel:+33675411072">06.75.41.10.72</a>  ou <a class="num-mail" href="mailto:lesfrancasfesches@free.fr">lesfrancasfesches@free.fr</a>
+    
+            Informations : <a class="num-mail"  href="https://francasfescheslechatel.jimdofree.com/"> https:/francasfescheslechatel.jimdofree.com/</a>
+            </P> 
+ 
+
+    <ul class="sous-menu">
+        <a href="#cantine"> <li>Cantine & Périscolaire</li></a> 
+        <a href="#francas">  <li >Francas</li> </a>
+         <a href="#ado"> <li>Club ado</li></a>
+ 
+    </ul>
+ <div id="ado"> <h2  class="titre-ado">Club ado : </h2></div>
+  <p class="ado"> Ce début d'année a vu quelques changements pour les ados de la commune. En effet, nous sommes en plein déménagement ! Nous avons quitté l'ancienne poste et nous nous installerons dans l'ancienne bibliothèque dès que possible ! En attendant, c'est à la maison des associations en face du temple que nous avons posé nos valises. Autre changement : les jours d'accueil. Après avoir échangé avec quelques-uns et forts de notre jeune histoire, il a été décidé que le local soit ouvert les lundis et vendredis de 17h à 19h et le mercredi de 14h à 19h. Cet accueil est dit "libre" puisque non soumis à une inscription préalable. On peu donc y passer quand on veut, le temps qu'on veut. Ce lieu reste un espace pour se rencontrer, échange, jouer, travailler scolairement seul ou en groupe bref ce lieu est au service de la jeune population feschoise !
+<br> <br>
+Les conditions d'accès sont les mêmes que celles d' l'an passé : résider à Fesches, être adolescent (collégiens ou jeunes lycéens) et s'acquitter de' l'adhésion annuelle de 10 €.
+<br> <br>
+Pour les vacances d'automne, en avant-première, je vous informe qu'un séjour sera mis en place du 2 au 5 novembre ; si le lieu est réservé, les séjour reste à construire...
+<a class="num-mail" href="mailto:lesadosfesches@gmail.com">lesadosfesches@gmail.com</a>
+</p> 
+
+ </p>
+</body>
+<div class="footer">
+<footer>
+
+<p>
+   Mairie de Fesches-Le-Châtel 
+   <br>
+   <br>
+   1 Rue François Mitterand 25490 Fesches-Le-Châtel
+   <br>
+    -Tel: <a  href="tel:+33381930010"> 03 81 93 00 10 </a> 
+   <br>
+   
+   Contact Mairie : <a href="mailto:mairie.fesches-25@wanadoo.fr"> mairie.fesches-25@wanadoo.fr </a>
+
+</p>
+<p style="text-align: center"> ©  -<script>document.write(new Date().getFullYear())</script> LERICHE Amélie </p>
+
+
+</footer>
+</div>
+</html>
