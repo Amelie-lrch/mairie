@@ -238,9 +238,11 @@ margin-bottom: 50px;
 /*--horaire--*/
 
 pre , h3{
-    text-align: center;
+    text-align: center; 
+}
 
-   
+.patrick {
+    text-align: center;
 }
 
 h3 {
@@ -448,20 +450,34 @@ ol li {
     margin-left: 60px;
 }
 
-.municipaux {
+.municipauxun , .municipauxdeux  {
     display: flex;
     justify-content: center;
     margin-right: 260px;
     margin-top: 80px;
 }
 
+.municipauxtrois {
+    text-align: center;
+}
+.photo-michael{
+    float: right;
+    margin-right: 400px;
+}
+
+.jeremie {
+    float: left;
+    margin-left: 160px;
+}
+
 .photo-michael { 
     margin-left: 30px;
+
 }
 
 
 .personel-communal{
-     margin-top: 100px;
+     margin-top: 300px;
      text-align: center;
 }
 
@@ -946,8 +962,16 @@ margin-bottom: 80px;
 /*--elu--*/
 
 .centrer img {
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 0px;
+}
+
+.centrer {
+    margin-top: 0px;
+}
+
+.centrer img {
+    margin-top: 35px;
+    margin-right: 5px;
 }
 
 .elus-titre {
@@ -969,28 +993,35 @@ margin-bottom: 80px;
 
 .gauche {
     text-align: center;
-    margin-left: 60px; 
+    margin-left: 10px; 
 }
 
 .droite {
     text-align: center;
-    margin-right: 60px; 
+    margin-right: 10px; 
 }
 
 .gauche-conseiller {
     float: left;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .droite-conseiller {
     float: right;
-    margin-right: 50px;
+    margin-right: 0px;
+}
+.droite-conseiller img {
+    margin-left: 0px;
+}
+.gauche-conseiller img {
+    margin-left: 20px;
 }
 
 .page-elu-municipaux {
     text-align: center;
-    padding: 20px;
-    margin-top: 650px;
+    padding: 0px;
+    margin-top: 320px;
+    font-size: 23px;
 }
 
 ol li {
@@ -999,16 +1030,41 @@ ol li {
     margin-left: 60px;
 }
 
-.municipaux {
-     display: flex;
+.municipauxun {
+    float: right;
     flex-direction: column;
-
+    margin-right: 50px;
+}
+.municipauxdeux{
+    float: left;
+    flex-direction: column;
+    margin-left: 50px;
 }
 
+.municipauxtrois{
+    text-align: center;
+    margin-left: 47px;
+}
 
 .photo-michael {
      margin-left: 0px; 
 }
+.photo-michael{
+    float: none;
+    margin-right: 0px;
+}
+
+
+.jeremie {
+    float: none;
+    margin-left: 0px;
+}
+
+.personel-communal {
+    margin-top: 30px;
+    text-align: center;
+}
+
 
 .personnel {
     text-align: inherit;
@@ -1016,6 +1072,16 @@ ol li {
     margin-left: 60px;
     margin-right: 60px;
 }
+
+.patrick {
+    text-align: center;
+    font-size: 10px;
+    margin-right: 30px;
+}
+
+
+
+
 
 /*--service--*/
 
@@ -1165,14 +1231,13 @@ pre, h3 {
     text-align: center;
     margin-right: 30px; 
 }
+
+.gauche-conseiller img {
+    margin-left: 30px;
+}
 .gauche-conseiller {
     float: left;
-    margin-left: 15px;
-}
-
-.droite-conseiller {
-    float: right;
-    margin-right: 15px;
+    margin-left: 12px;
 }
 
 .page-elu-municipaux {
@@ -1181,13 +1246,34 @@ pre, h3 {
     margin-top: 50px;
 }
 
+.gauche {
+    text-align: center;
+    margin-left: 10px; 
+}
+
+.droite {
+    text-align: center;
+    margin-right: 10px; 
+}
+
+.droite-conseiller img {
+    margin-left: 30px;
+}
+
+.municipauxun {
+    float: right;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+
+
 
 .patrick {
     text-align: center;
     font-size: 10px;
-    margin-right: 0px;
+    margin-right: 27px;
 }
-
 .cantine ol li {
     margin-left: 30px;
 }
@@ -1227,6 +1313,12 @@ pre, h3 {
 
     .maire-elu-text {
         margin-left: 130px;
+    }
+
+    .municipauxun {
+        float: right;
+        flex-direction: column;
+        margin-right: 150px;
     }
 
     pre, h3 {
@@ -1336,6 +1428,17 @@ pre, h3 {
     .droite-conseiller {
         float: right;
         margin-right: 100px;
+    }
+
+    .jeremie {
+        float: left;
+        margin-left: -119px;
+        margin-right: 185px;
+    }
+
+    .photo-michael {
+        float: left;
+        margin-right: -29px;
     }
 
     /*--service--*/
