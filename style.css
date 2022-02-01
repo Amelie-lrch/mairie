@@ -1201,9 +1201,10 @@ pre, h3 {
 
 .bruit {
     float: right;
-    width: 10%;
+    width: 20%;
     margin-top: none;
-    margin-right: 50px;
+    margin-right: 14px;
+    margin-top: 110px;
 }
 
 .text-urbanisme {
