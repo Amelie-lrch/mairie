@@ -191,12 +191,6 @@ footer :is( a:hover ) {
     color: black;
 }
 
-.lien-trier :hover {
-    color: red;
-    transition: 2s;
-    background-color: transparent ; 
-}
-
 .pma {
     width: 30%;
 }
@@ -315,6 +309,16 @@ ol li {
    margin-left: 150px;
    margin-right: 150px;
    margin-top: 30px;
+}
+
+.francas-mercredi {
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.h-francas {
+    margin-left: 210px;
 }
 
 .prix-francas {
@@ -540,6 +544,10 @@ ol li {
 
 .interdit {
 color: red;
+}
+
+.lieux-point-r{
+    list-style-type: square ! important; 
 }
 
 /*--urbanisme--*/
@@ -1117,8 +1125,25 @@ ol li {
     font-size: 14px;
 }
 
-.euro {
+.francas-mercredi {
     text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.h-francas{
+margin-left: 10px;
+margin-right: 10px;
+font-size: 14px
+}
+
+.tarif{
+    margin-right: 50px;
+}
+
+.euro {
+    text-align: left;
     margin-left: 40px;
 }
 .rappel {
@@ -1186,9 +1211,9 @@ pre, h3 {
 }
 
 .pointr {
-    width: 10%;
+    width: 13%;
     float: right;
-    margin-right: 50px;
+    margin-right: 127px;
     margin-top: 0px;
 }
 
