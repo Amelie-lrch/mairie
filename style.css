@@ -1511,9 +1511,12 @@ pre, h3 {
         margin-right: 50px;
     }
        
+}
 
-
-
-
+@media screen and (min-width: 520px) and (max-width:1024px) {
+.horaire {
+    text-align: left;
+    margin-left: 50px;
+}
 
 }
