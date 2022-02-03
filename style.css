@@ -1503,6 +1503,13 @@ pre, h3 {
         margin-right: 200px;
         margin-bottom: 80px;
     }
+	.pointr {
+		margin-right: 0px;
+	}
+	
+	.bruit {
+		margin-right: 0px ; 
+	}
 
     .text-urbanisme {
         margin-bottom: 80px;
