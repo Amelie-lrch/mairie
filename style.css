@@ -569,6 +569,17 @@ margin-bottom: 80px;
     margin-bottom: 80px;
 }
 
+.attention {
+    width: 10%;
+    margin: 25px;
+}
+
+.attentions {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*--compte rendu--*/
 
 .retour-site {
@@ -694,7 +705,7 @@ margin-bottom: 80px;
       color: blue;
   }
 
-  /*--meu--*/
+  /*--menu--*/
 
 .header {
     display: grid;
@@ -1238,6 +1249,11 @@ pre, h3 {
     margin-left: 10px;
     margin-right: 10px;
 }
+	 .attention {
+    width: 20%;
+    margin: 25px;
+}
+
 
 }
 
