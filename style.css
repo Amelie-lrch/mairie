@@ -365,8 +365,31 @@ ol li {
     .elus-titre {
         font-size: 60px;
         margin-top: 60px;
-
+        margin-bottom: 100px;
+        margin-right: 200px;
     }
+
+    .flc-elu {
+        width: 15%;
+        
+      }
+      
+      .flc-maire {
+        width: 20%;
+        
+      }
+      
+      .mairies {
+        width: 30%;
+        margin-top: 25px;
+        
+      }
+      .text-carousel {
+        font-size: 20px;
+        font-family: - Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #000;
+      }
+      
 
     .maire-elu {
         width: 10%;
@@ -480,9 +503,9 @@ ol li {
 }
 
 
-.personel-communal{
-     margin-top: 300px;
-     text-align: center;
+.personel-communal {
+    margin-top: 50px;
+    text-align: center;
 }
 
 .personnel {
@@ -562,13 +585,13 @@ color: red;
 .rappel  {
 text-align: center;
 margin-right: 200px;
-margin-bottom: 80px;
+margin-bottom: 25px;
 }
 
 .text-urbanisme {
     margin-bottom: 80px;
 }
-
+ 
 .attention {
     width: 10%;
     margin: 25px;
@@ -702,7 +725,7 @@ margin-bottom: 80px;
   .text-carousel {
       font-size: 25px;
       font-family: - 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-      color: blue;
+      color: black;
   }
 
   /*--menu--*/
@@ -883,7 +906,7 @@ margin-bottom: 80px;
         
     }
     .maire {
-        width: 25%;
+        width: 35%;
         height: 25%;
         margin-top: 20px;
         margin-left: 140px;
@@ -1249,11 +1272,10 @@ pre, h3 {
     margin-left: 10px;
     margin-right: 10px;
 }
-	 .attention {
+.attention {
     width: 20%;
     margin: 25px;
 }
-
 
 }
 
@@ -1263,7 +1285,7 @@ pre, h3 {
 
 
 .maire {
-    width: 25%;
+    width: 35%;
     height: 25%;
     margin-top: 20px;
     margin-left: 170px;
@@ -1339,7 +1361,7 @@ pre, h3 {
 @media screen and (min-width: 420px) and (max-width:500px) {
 
     .maire {
-        width: 25%;
+        width: 35%;
         height: 25%;
         margin-top: 20px;
         margin-left: 215px;
@@ -1393,7 +1415,7 @@ pre, h3 {
     }
 
     .maire {
-        width: 15%;
+        width: 16%;
         height: 15%;
         position: relative;
         margin-left: 40px;
@@ -1519,23 +1541,33 @@ pre, h3 {
         margin-right: 200px;
         margin-bottom: 80px;
     }
-	.pointr {
-		margin-right: -84px;
-	}
-	
-	.bruit {
-		margin-right: 0px ; 
-	}
+
+    .pointr {
+        width: 10%;
+        float: right;
+        margin-right: 0px;
+        margin-top: 120px;
+    }
+    
+    .bruit {
+        float: right;
+        width: 10%;
+        margin-top: 230px;
+        margin-right: 0px;
+    }
+/*--urbanisme--*/
 
     .text-urbanisme {
-        margin-bottom: 155px;
+        margin-bottom: 130px;
         text-align: justify;
         margin-left: 50px;
         margin-right: 50px;
     }
-       
-}
 
+
+}
+ 
+/*--portabe coucher--*/
 @media screen and (min-width: 520px) and (max-width:1024px) {
 .horaire {
     text-align: left;
